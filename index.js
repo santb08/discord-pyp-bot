@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const {
@@ -35,17 +36,20 @@ app.post('/hooks', async (req, res) => {
     });
   }
 
-  const { type, data: commandData } = req.body;
+  const { type, data: commandData, member, guild_id } = req.body;
 
   if (type === InteractionType.PING) {
     return res.status(200).send({
       type: InteractionResponseType.PONG,
     });
   }
-  const { name } = commandData;
+  const { name, options } = commandData;
+  const [city] = options;
+
+  console.log(`[member] ${member.nick} [guild] ${guild_id} [city] ${city.value}`);
 
   if (name === COMMAND_DEFAULT) {
-    const responseMessage = await getPyp();
+    const responseMessage = await getPyp(city.value);
 
     return res.status(200).send({
       type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,

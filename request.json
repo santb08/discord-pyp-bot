@@ -1,0 +1,115 @@
+{
+    "name": "pyp",
+    "type": 1,
+    "description": "Obtener el pico y placa del día actual",
+    "options": [
+        {
+            "name": "city",
+            "description": "Ciudad de la cual quieres conocer su pyp",
+            "type": 3,
+            "required": true,
+            "choices": [
+                {
+                    "name": "armenia",
+                    "value": "armenia"
+                },
+                {
+                    "name": "barranquilla",
+                    "value": "barranquilla"
+                },
+                {
+                    "name": "bello",
+                    "value": "bello"
+                },
+                {
+                    "name": "bogotá",
+                    "value": "bogota"
+                },
+                {
+                    "name": "bucaramanga",
+                    "value": "bucaramanga"
+                },
+                {
+                    "name": "caldas",
+                    "value": "caldas"
+                },
+                {
+                    "name": "cali",
+                    "value": "cali"
+                },
+                {
+                    "name": "cartagena",
+                    "value": "cartagena"
+                },
+                {
+                    "name": "copacabana",
+                    "value": "copacabana"
+                },
+                {
+                    "name": "cúcuta",
+                    "value": "cucuta"
+                },
+                {
+                    "name": "dosquebradas",
+                    "value": "dosquebradas"
+                },
+                {
+                    "name": "envigado",
+                    "value": "envigado"
+                },
+                {
+                    "name": "fusagasugá",
+                    "value": "fusagasuga"
+                },
+                {
+                    "name": "girardota",
+                    "value": "girardota"
+                },
+                {
+                    "name": "ibagué",
+                    "value": "ibague"
+                },
+                {
+                    "name": "itagüí",
+                    "value": "itagui"
+                },
+                {
+                    "name": "la estrella",
+                    "value": "la estrella"
+                },
+                {
+                    "name": "manizales",
+                    "value": "manizales"
+                },
+                {
+                    "name": "medellín",
+                    "value": "medellin"
+                },
+                {
+                    "name": "pasto",
+                    "value": "pasto"
+                },
+                {
+                    "name": "pereira",
+                    "value": "pereira"
+                },
+                {
+                    "name": "popayán",
+                    "value": "popayan"
+                },
+                {
+                    "name": "quibdó",
+                    "value": "quibdo"
+                },
+                {
+                    "name": "sabaneta",
+                    "value": "sabaneta"
+                },
+                {
+                    "name": "santa marta",
+                    "value": "santa marta"
+                }
+            ]
+        }
+    ]
+}
